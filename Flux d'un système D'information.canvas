@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"grp-log","type":"group","x":-780,"y":-480,"width":1800,"height":780,"color":"#e6ffe6","label":"Système Logiciel (Cœur du SI)"},
+		{"id":"grp-hum","type":"group","x":-2320,"y":-415,"width":580,"height":650,"color":"#fff0e6","label":"Ressources Humaines & Procédures"},
+		{"id":"grp-mat","type":"group","x":-1500,"y":-415,"width":580,"height":580,"color":"#e6f0ff","label":"Infrastructure Matérielle"},
+		{"id":"grp-inf","type":"group","x":1100,"y":-240,"width":680,"height":380,"color":"#f0e6ff","label":"Données → Informations → Décision"},
+		{"id":"txt-info","type":"text","text":"**Information = Données + Sens + Contexte**  \nExemple concret :  \n42 → 42 ventes → CA jour = 8 400 € → relancer pub","x":1200,"y":-140,"width":520,"height":160},
+		{"id":"txt-proc","type":"text","text":"**Procédures & Gouvernance**  \n• Formation • Documentation • Habilitations  \n• Sauvegardes • Plan de reprise • RGPD","x":-2300,"y":-340,"width":420,"height":220},
+		{"id":"txt-user","type":"text","text":"**Acteur principal**  \nUtilisateur métier / administrateur  \n→ saisit, consulte, décide","x":-2300,"y":-40,"width":420,"height":140},
+		{"id":"txt-materiel","type":"text","text":"**Matériel & Réseau**  \n• Clients : PC, tablettes, mobiles  \n• Serveurs / Cloud (AWS, Azure, OVH)  \n• Réseau : switches, firewalls, VPN, fibre","x":-1380,"y":-275,"width":420,"height":220},
+		{"id":"txt-entree","type":"text","text":"**1. Entrée / Acquisition des données**  \nSaisie ou capture :  \n• formulaires • imports CSV/Excel/JSON • API • capteurs/IoT • scans","x":-660,"y":-230,"width":440,"height":180,"color":"#d9f2ff"},
+		{"id":"txt-trait","type":"text","text":"**2. Traitement & Transformation**  \n• calculs • validations • enrichissement • règles métier • IA/ML (optionnel)","x":-60,"y":-440,"width":440,"height":180,"color":"#d9ffd9"},
+		{"id":"txt-stock","type":"text","text":"**3. Stockage persistant & sécurisé**  \n• SGBD relationnels : PostgreSQL, MySQL, Oracle  \n• NoSQL : MongoDB, Cassandra  \n• Data Warehouse/Lake : Snowflake, BigQuery","x":-60,"y":-50,"width":440,"height":220,"color":"#d9ffd9"},
+		{"id":"txt-sortie","type":"text","text":"**4. Sortie / Restitution**  \n• Dashboards (Power BI, Tableau, Metabase)  \n• Rapports • API • Notifications • Exports automatisés","x":520,"y":-230,"width":440,"height":180,"color":"#f0d9ff"}
+	],
+	"edges":[
+		{"id":"2f89d8a2dac2d08d","fromNode":"grp-hum","fromSide":"right","toNode":"grp-mat","toSide":"left"},
+		{"id":"95948078a62a6438","fromNode":"txt-proc","fromSide":"bottom","toNode":"txt-user","toSide":"top"},
+		{"id":"7c57704ce7062c5a","fromNode":"grp-mat","fromSide":"right","toNode":"grp-log","toSide":"left"},
+		{"id":"145ab4e69c8fdc43","fromNode":"txt-entree","fromSide":"right","toNode":"txt-trait","toSide":"left"},
+		{"id":"3ea9fea3738adc55","fromNode":"txt-entree","fromSide":"right","toNode":"txt-stock","toSide":"left"},
+		{"id":"549d2d0cd10bd177","fromNode":"txt-trait","fromSide":"bottom","toNode":"txt-stock","toSide":"top"},
+		{"id":"6091994d3fa24317","fromNode":"txt-stock","fromSide":"right","toNode":"txt-sortie","toSide":"left"},
+		{"id":"59ae1e09312b9868","fromNode":"txt-stock","fromSide":"top","toNode":"txt-trait","toSide":"bottom"},
+		{"id":"6dc8d6429e75f474","fromNode":"grp-log","fromSide":"right","toNode":"grp-inf","toSide":"left"}
+	]
+}
