@@ -1,6 +1,6 @@
-# Vault Obsidian - IHM-1
+# Vault Obsidian - SIG
 
-Ce dossier est un **vault Obsidian** contenant du contenu pour le cours IHM-1.
+Ce dossier est un **vault Obsidian** contenant du contenu pour le cours SIG
 
 ## ⚙️ Prérequis
 
@@ -15,7 +15,7 @@ Ce dossier est un **vault Obsidian** contenant du contenu pour le cours IHM-1.
 2. **Ouvrir le vault dans Obsidian**
    - Lancez Obsidian
    - Cliquez sur "Ouvrir un dossier comme vault" (ou "Open folder as vault")
-   - Naviguez jusqu'à ce dossier (`IHM-1`)
+   - Naviguez jusqu'à ce dossier 
    - Sélectionnez-le pour l'ouvrir
 
 3. **Explorer le contenu**

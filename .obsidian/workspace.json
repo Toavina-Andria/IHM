@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logiciels SIG.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logiciels SIG"
+              "title": "README"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "b6789242918a7b53",
   "lastOpenFiles": [
-    "Introduction.md",
     "Logiciels SIG.md",
+    "Introduction.md",
     "README.md",
     "Index.md",
     "Flux d'un système D'information.canvas",
