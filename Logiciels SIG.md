@@ -17,3 +17,5 @@
 	D'ESRI - leader historique du marché du SIG. 
 - #### MapINFO, MapXtreme,MapMarker
 	de *Pitney Bowes*, leader mondial du SIG.
+- #### Oracle Spatiale
+	Stockage d'informations géographiques et requêtes spatiales.
